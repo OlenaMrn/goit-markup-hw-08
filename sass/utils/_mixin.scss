@@ -1,0 +1,15 @@
+@mixin spaceBetween ($type: space-between, $type2: center)  {
+     display: flex;
+     align-items: $type2;
+     justify-content: $type;  
+ }
+
+//  @mixin centerFlex {
+//      display: flex;
+//      align-items: center;
+//      justify-content: center;
+       
+//  }
+
+
+

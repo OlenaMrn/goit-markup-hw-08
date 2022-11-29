@@ -1,0 +1,33 @@
+.work {
+  padding-top: 0;  
+}
+
+.work__list {
+    @extend %list;
+    @include spaceBetween;
+}
+
+.work__item {
+  position: relative;
+}
+
+.work__block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.work__text {
+  margin: 0;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #ffffff;
+}

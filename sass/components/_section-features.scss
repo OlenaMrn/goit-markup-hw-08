@@ -1,0 +1,45 @@
+.features {
+    display: flex;
+    
+
+
+    &__titel {
+        margin-top: 0px;
+        margin-bottom: 2px;
+        color: $primary-text-color;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        
+    }
+
+    &__text {
+        color: $paragraf-text-color;
+
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 0;
+    }
+
+
+}
+
+.features__block {
+@include spaceBetween ($type: center);
+
+  padding: 0;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+}
+
+
+
+.features__item + .features__item {
+  margin-left: 30px;
+}

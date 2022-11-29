@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: $primary-text-color;
+  font-family: $primary-font;
+  letter-spacing: 0.03em;
+}
+
+img {
+    display: block;
+  
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+.section {
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+ 
+.section-titel {
+  color: $primary-text-color;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+  
+
