@@ -12,12 +12,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
   </head>
 
   <body>
     <header class="page-header">
-      <nav class="page-header-nav">
+      <nav class="page-header-nav container" >
         <a class="logo logo--right" href="./index.html"> <span class="logo--acentcolor link">Web</span>Studio</a>
 
         <ul class="nav__list">
@@ -137,7 +137,7 @@
           <h2 class="section-titel">Наша команда</h2>
           <ul class="teammate list">
             <li class="teammate__item">
-              <img src="./images/imgteam1.jpg" alt="Ігор Дем'яненко" class="team-list__photo" width="270" />
+              <!-- <img src="./images/imgteam1.jpg" alt="Ігор Дем'яненко" class="teammate__photo" width="450" height="460" /> -->
               <div class="teammate__card">
                 <h3 class="teammate__name">Ігор Дем'яненко</h3>
                 <p class="teammate__position" lang="en">Product Designer</p>
@@ -177,7 +177,7 @@
             </li>
 
             <li class="teammate__item">
-              <img src="./images/imgteam2.jpg" alt="Ольга Рєпіна" class="team-list__photo" width="270" />
+              <!-- <img src="./images/imgteam2.jpg" alt="Ольга Рєпіна" class="teammate__photo" width="450" height="460" /> -->
               <div class="teammate__card">
                 <h3 class="teammate__name">Ольга Рєпіна</h3>
                 <p class="teammate__position" lang="en">Frontend</p>
@@ -215,7 +215,7 @@
             </li>
 
             <li class="teammate__item">
-              <img src="./images/imgteam3.jpg" alt="Микола Тарасов" class="team-list__photo" width="270" />
+              <!-- <img src="./images/imgteam3.jpg" alt="Микола Тарасов" class="teammate__photo" width="450" height="460" /> -->
               <div class="teammate__card">
                 <h3 class="teammate__name">Микола Тарасов</h3>
                 <p class="teammate__position" lang="en">Marketing</p>
@@ -253,7 +253,7 @@
             </li>
 
             <li class="teammate__item">
-              <img src="./images/imgteam4.jpg" alt="Михайло Єрмаков" class="team-list__photo" width="270" />
+              <!-- <img src="./images/imgteam4.jpg" alt="Михайло Єрмаков" class="teammate__photo" width="450" height="460"/> -->
               <div class="teammate__card">
                 <h3 class="teammate__name">Михайло Єрмаков</h3>
                 <p class="teammate__position" lang="en">UI Designer</p>
@@ -346,8 +346,9 @@
 
     <footer class="footer">
       <div class="container-footer">
-        <div class="footer-block">
-          <a class="logo" href="./index.html">
+        <div class="footer-wrap">
+          <div class="footer-block">
+          <a class="logo logo-footer" href="./index.html">
             <span class="logo--acentcolor link">Web</span><span class="logo--white">Studio</span></a
           >
 
@@ -369,9 +370,9 @@
           </address>
         </div>
 
-        <div class="footer-block">
+        <div class="footer-block footer-block__form">
           <h3 class="footer-block__titel">приєднуйтесь</h3>
-          <ul class="social-media--left">
+          <ul class="social-media">
             <li class="social-contacts__item">
               <a
                 class="social-media__link social-media__link--gray"
@@ -422,10 +423,12 @@
             </li>
           </ul>
         </div>
+        </div>
+        
 
         <!-- форма у футері -->
 
-        <div class="subscribe_form">
+        <div class="footer-block subscribe_form">
           <h3 class="footer-block__titel">Підпишіться на розсилку</h3>
 
           <form name="subscribe_form" autocomplete="on" novalidate>

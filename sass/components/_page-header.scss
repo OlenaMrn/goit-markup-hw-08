@@ -1,31 +1,46 @@
 .page-header {
-  @extend %nopadding;
+  
+  
   border-bottom: 1px solid #ECECEC;
   background-color: $primary-bg-color;
 }
 
 .page-header-nav {
-  @extend %container;
+
+   @media screen and (min-width: 768px) {
   display: flex;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  align-items: center; 
+  
+  // width: 1200px;
+    }
 }
+
+.page-header-nav {
+@media screen and (min-width: 1200px){
+width: 1200px;
+}
+
+
+}
+
 
 .nav__list {
   @extend %list;
-  display: flex;
+
+   @media screen and (min-width: 768px) {
+   display: flex;}
+   
+@media screen and (min-width: 1024px){
+  display: flex;}
+
   
-  }
+ }
 
 .nav__item {
-  position: relative;
-
-}
-
-.current::after {
+   @media screen and (min-width: 768px) {
+    position: relative;
+    
+    .current::after {
   content: '';
   display: block;
   position: absolute;
@@ -36,16 +51,28 @@
   bottom: -2px;
   left: 0;
   background-color: $acent-color;
+
+.current {
+    color: $acent-color;
+  }
 }
 
-.nav__item + .nav__item {
-  margin-left: 50px;
+
 }
+}
+
+
+.nav__item + .nav__item {
+  @media screen and (min-width: 768px){
+  margin-left: 50px;
+  }
+}
+
 
 .nav__link {
   @extend %link;
 
-  display: block;
+  
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -55,21 +82,34 @@
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em; 
+
+  @media screen and (min-width: 768px) {
+   display: block;
+  }
 }
 
-.current {
-    color: $acent-color;
-  }
+
 
 .contacts {
   @extend %list;
-  display: flex;
+  // display: flex;
   margin-left: auto;
+
+ @media screen and (min-width: 768px) {
+  //  padding-top: 21px;
+  // padding-bottom: 21px;
+ }
+ 
+@media screen and (min-width: 1200px) {
+  display: flex;
+
+ }
+
 }
 
-.contacts__item + .contacts__item {
-  margin-left: 50px;
-}
+// .contacts__item + .contacts__item {
+//   margin-left: 50px;
+// }
 
 .contacts__icon {
   margin-right: 10px;
@@ -82,17 +122,40 @@
 
 .contacts__link {
   @extend %link;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+ 
+ 
 
   color: $paragraf-text-color;
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
   line-height: 1.2;
-  }
+
 
   
+ }
 
+ .contacts__item {
+  &:not( :last-child) {
+    @media screen and (min-width: 768px) {
+    
+    // @media screen and (max-width: 767px) {
+    
+        margin-bottom: 10px;
+    }
 
+@media screen and (min-width: 1200px) {
+  margin-bottom: 0px;
+  margin-right: 50px;
+}
+  }
+  
+ 
+  }
+ 
+ 
+
+.contacts {
+ 
+    
+}

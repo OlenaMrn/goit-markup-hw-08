@@ -1,7 +1,7 @@
 
 .social-media {
 @extend %list;
-@include spaceBetween;
+@include spaceBetween ($type: center);
 
 margin-top: 16px;
 margin-bottom: 0;

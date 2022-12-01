@@ -6,30 +6,56 @@
 
 .container-footer {
   @extend %container;
-  display: flex;
+ //   display: flex;
+}
+
+.footer-wrap {
+    @media screen and (min-width: 768px) {
+    display: flex;}
+}
+
+.logo-footer {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+  line-height: 1.4;
 }
 
 .footer-block {
-  margin-right: 70px;
+    &:not( :first-child){
+        @media screen and (max-width: 767px) {
+    margin-top: 60px;}
+              
+        }
 
-  &__titel {
+             
+     
+ 
+    &__titel {
     
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.2;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 20px;
+    text-align: center;  
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 0;
+    }
 
-  }
+    
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+}
 }
 
 .address {
-  display: block;
   padding-top: 0px;
   margin-bottom: 0px;
   margin-top: 20px;
+  text-align: center;
 }
 
 
@@ -41,6 +67,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+  
 
   &--gray {
   @extend %link;
@@ -63,13 +90,22 @@
 
 }
 
-.subscribe-form__wrapper {
-  display: flex;
-  position: relative;
+// .subscribe-form__wrapper {
+  
+// //   position: relative;
+// }
+
+.subscribe_form {
+    @media screen and (min-width: 768px) {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 }
 
 .subscribe-form__wrapper input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   margin: 0;
   padding: 15px 0 15px 15px;
@@ -89,24 +125,35 @@
   }
 }
 
-.subscribe-form__button {
-  position: relative;
-  @extend %button;
-  
+.subscribe-button__wrapper {
+position: relative;
+}
 
-  padding-left: 28px;
-  margin-left: 12px;
-  margin-right: 0;
-  min-width: 200px;
-  text-align: left;
+.subscribe-form__button {
+    
+    @extend %button;
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+   
+    margin-top: 20px;
+    min-width: 200px;
+    
+    // padding-right: 64px;
+
   
 }
 
 
 .subscribe-form__icon {
-  position: absolute;
-  right: 28px;
-  transform: translate(0, 50%);
+position: absolute;
+top: 0;
+left: 50%;
+ 
+
+transform: translate(200%, 50%);
+
   margin: 0;
   fill: white;
 }
