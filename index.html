@@ -17,7 +17,7 @@
 
   <body>
     <header class="page-header">
-      <nav class="page-header-nav container" >
+      <nav class="page-header-nav container">
         <a class="logo logo--right" href="./index.html"> <span class="logo--acentcolor link">Web</span>Studio</a>
 
         <ul class="nav__list">
@@ -46,8 +46,49 @@
             >
           </li>
         </ul>
+        <button class="js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use class="icon-menu_40px" href="./images/symbol-defs.svg#icon-menu_40px"></use>
+            <!-- <use class="icon-close" href="./images/symbol-defs.svg#icon-close_40px"></use> -->
+          </svg>
+        </button>
       </nav>
     </header>
+
+    <!-- munu cont mob -->
+
+    <div class="menu-container js-menu-container" id="menu-container">
+      <button class="js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+          <use class="icon-close" href="./images/symbol-defs.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+
+      <ul class="menu-nav">
+        <li class="menu-nav__item"><a href="./index.html" class="menu-nav__link current">Студія</a></li>
+        <li class="menu-nav__item"><a href="./portfolio.html" class="menu-nav__link">Портфоліо</a></li>
+        <li class="menu-nav__item"><a href="#" class="menu-nav__link">Контакти</a></li>
+      </ul>
+
+      <div class="wrap">
+        <ul class="menu-contacts">
+          <li class="menu-contacts__item">
+            <a href="tel:+380961111111" class="menu-contacts__tel link"> +38 096 111 11 11</a>
+          </li>
+          <li class="menu-contacts__item">
+            <a href="mailto:info@devstudio.com" class="menu-contacts__mail link"> info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="menu-social">
+          <li class="menu-social__item">
+            <a href="" class="menu-social__link">Instagram</a><span class="menu-social__border"></span>
+          </li>
+          <li class="menu-social__item"><a href="" class="menu-social__link">Twitter</a></li>
+          <li class="menu-social__item"><a href="" class="menu-social__link">Facebook</a></li>
+          <li class="menu-social__item"><a href="" class="menu-social__link">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
 
     <main>
       <section class="hero">
@@ -137,6 +178,21 @@
           <h2 class="section-titel">Наша команда</h2>
           <ul class="teammate list">
             <li class="teammate__item">
+              <img
+                class="teammate__photo"
+                srcset="
+                  ././images/team1-270w.jpg 270w,
+                  ././images/team1-354w.jpg 354w,
+                  ././images/team1-450w.jpg 450w,
+                  ././images/team1-540w.jpg 540w,
+                  ././images/team1-708w.jpg 708w,
+                  ././images/team1-900w.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team1-450w.jpg"
+                alt="Ігор Дем'яненко"
+                loading="lazy"
+              />
               <!-- <img src="./images/imgteam1.jpg" alt="Ігор Дем'яненко" class="teammate__photo" width="450" height="460" /> -->
               <div class="teammate__card">
                 <h3 class="teammate__name">Ігор Дем'яненко</h3>
@@ -177,6 +233,21 @@
             </li>
 
             <li class="teammate__item">
+              <img
+                class="teammate__photo"
+                srcset="
+                  ././images/team2-270w.jpg 270w,
+                  ././images/team2-354w.jpg 354w,
+                  ././images/team2-450w.jpg 450w,
+                  ././images/team2-540w.jpg 540w,
+                  ././images/team2-708w.jpg 708w,
+                  ././images/team2-900w.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team2-450w.jpg"
+                alt="Ольга Рєпіна"
+                loading="lazy"
+              />
               <!-- <img src="./images/imgteam2.jpg" alt="Ольга Рєпіна" class="teammate__photo" width="450" height="460" /> -->
               <div class="teammate__card">
                 <h3 class="teammate__name">Ольга Рєпіна</h3>
@@ -215,6 +286,22 @@
             </li>
 
             <li class="teammate__item">
+              <img
+                class="teammate__photo"
+                srcset="
+                  ././images/team3-270w.jpg 270w,
+                  ././images/team3-354w.jpg 354w,
+                  ././images/team3-450w.jpg 450w,
+                  ././images/team3-540w.jpg 540w,
+                  ././images/team3-708w.jpg 708w,
+                  ././images/team3-900w.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team3-450w.jpg"
+                alt="Микола Тарасов"
+                loading="lazy"
+              />
+
               <!-- <img src="./images/imgteam3.jpg" alt="Микола Тарасов" class="teammate__photo" width="450" height="460" /> -->
               <div class="teammate__card">
                 <h3 class="teammate__name">Микола Тарасов</h3>
@@ -253,7 +340,23 @@
             </li>
 
             <li class="teammate__item">
-              <!-- <img src="./images/imgteam4.jpg" alt="Михайло Єрмаков" class="teammate__photo" width="450" height="460"/> -->
+              <img
+                class="teammate__photo"
+                srcset="
+                  ././images/team4-270w.jpg 270w,
+                  ././images/team4-354w.jpg 354w,
+                  ././images/team4-450w.jpg 450w,
+                  ././images/team4-540w.jpg 540w,
+                  ././images/team4-708w.jpg 708w,
+                  ././images/team4-900w.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team4-450w.jpg"
+                alt="Михайло Єрмаков"
+                loading="lazy"
+              />
+
+              <!-- <img src="./images/imgteam4.jpg" alt="Михайло Єрмаков" class="teammate__photo" width="450" height="460" /> -->
               <div class="teammate__card">
                 <h3 class="teammate__name">Михайло Єрмаков</h3>
                 <p class="teammate__position" lang="en">UI Designer</p>
@@ -348,83 +451,82 @@
       <div class="container-footer">
         <div class="footer-wrap">
           <div class="footer-block">
-          <a class="logo logo-footer" href="./index.html">
-            <span class="logo--acentcolor link">Web</span><span class="logo--white">Studio</span></a
-          >
+            <a class="logo logo-footer" href="./index.html">
+              <span class="logo--acentcolor link">Web</span><span class="logo--white">Studio</span></a
+            >
 
-          <address class="address">
-            <ul class="list">
-              <li>
+            <address class="address">
+              <ul class="list">
+                <li>
+                  <a
+                    class="address__link link"
+                    href="https://goo.gl/maps/SgtujX8ZKbcagaCV8"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                  >
+                    м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
+                <li><a href="mailto:info@devstudio.com" class="address__link--gray link">info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111" class="address__link--gray link">+38 096 111 11 11</a></li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer-block footer-block__form">
+            <h3 class="footer-block__titel">приєднуйтесь</h3>
+            <ul class="social-media">
+              <li class="social-contacts__item">
                 <a
-                  class="address__link link"
-                  href="https://goo.gl/maps/SgtujX8ZKbcagaCV8"
+                  class="social-media__link social-media__link--gray"
+                  href=""
                   target="_blank"
                   rel="noreferrer noopener nofollow"
                 >
-                  м. Київ, пр-т Лесі Українки, 26
+                  <svg class="social-media__icon social-media__icon--white" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li><a href="mailto:info@devstudio.com" class="address__link--gray link">info@devstudio.com</a></li>
-              <li><a href="tel:+380961111111" class="address__link--gray link">+38 096 111 11 11</a></li>
+              <li class="social-contacts__item">
+                <a
+                  class="social-media__link social-media__link--gray"
+                  href=""
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                >
+                  <svg class="social-media__icon social-media__icon--white" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-contacts__item">
+                <a
+                  class="social-media__link social-media__link--gray"
+                  href=""
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                >
+                  <svg class="social-media__icon social-media__icon--white" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-contacts__item">
+                <a
+                  class="social-media__link social-media__link--gray"
+                  href=""
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                >
+                  <svg class="social-media__icon social-media__icon--white" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
-          </address>
+          </div>
         </div>
-
-        <div class="footer-block footer-block__form">
-          <h3 class="footer-block__titel">приєднуйтесь</h3>
-          <ul class="social-media">
-            <li class="social-contacts__item">
-              <a
-                class="social-media__link social-media__link--gray"
-                href=""
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-              >
-                <svg class="social-media__icon social-media__icon--white" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-contacts__item">
-              <a
-                class="social-media__link social-media__link--gray"
-                href=""
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-              >
-                <svg class="social-media__icon social-media__icon--white" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-contacts__item">
-              <a
-                class="social-media__link social-media__link--gray"
-                href=""
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-              >
-                <svg class="social-media__icon social-media__icon--white" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-contacts__item">
-              <a
-                class="social-media__link social-media__link--gray"
-                href=""
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-              >
-                <svg class="social-media__icon social-media__icon--white" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        </div>
-        
 
         <!-- форма у футері -->
 
@@ -522,5 +624,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

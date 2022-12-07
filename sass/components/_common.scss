@@ -11,6 +11,9 @@ body {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
+
    }
 
 *,
@@ -46,19 +49,26 @@ padding-bottom: 60px;
 
 .container {
   
-  @media (min-width: 480px) {
-    width: 480px;
-    
+   @media (max-width: 479px) {
+
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+   
+  }
+
+    @media (min-width: 480px) {
+    width: 100%;
+   
   }
 
   @media screen and (min-width: 768px) {
     width: 768px;
   }
   
-@media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
   }
-
 }
  
 .section-titel {

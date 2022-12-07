@@ -1,0 +1,197 @@
+.js-open-menu {
+display: none;
+
+@media screen and (max-width: 767px) {
+display: inline-flex;
+margin-left: auto;
+padding: 0;
+border: none;
+background-color: transparent;
+}
+ 
+}
+
+.js-close-menu {
+display: none;
+
+@media screen and (max-width: 767px) {
+position: absolute;
+
+top: 10px;
+right: 15px;
+align-items: center;
+    justify-content: center;
+    margin: 0;
+display: inline-flex;
+margin-left: auto;
+padding: 0;
+border: none;
+background-color: transparent;
+// z-index: 2;
+ }
+
+
+
+}
+
+// .menu-button .icon-close {
+//   display: none;
+// }
+
+// .menu-button.is-open {
+//   .icon-close {
+//     display: block;
+//   }
+// }
+
+
+// .menu-button.is-open {
+//   .icon-menu {
+//     display: none;
+//   }
+
+// }
+
+// .menu-container.is-open {
+// @media screen and (max-width: 767px){
+// display: block; 
+
+// }
+
+// }
+
+.menu-container.is-open {
+display: flex;
+
+}
+
+.menu-container { 
+
+
+position: fixed;
+
+display: none;
+flex-direction: column;
+justify-content: space-between;
+
+top: 0;
+left: 0;
+
+height: 796px;
+width: 100vw;
+background-color: $primary-bg-color;
+padding: 40px 40px 48px 40px;
+text-align: left;
+
+@media screen and (max-width:479px) {
+padding: 40px 10px 48px 10px;
+}
+
+// @media screen and (min-width:480px) {
+//     width: 480px;
+// margin-left: auto;
+// margin-right: auto;
+
+@media screen and (min-width:768px){
+display: none;
+    
+} 
+
+}
+
+
+.menu-nav {
+    @extend %list;
+    
+   
+
+    &__link {
+
+@extend %link;
+
+font-weight: 500;
+font-size: 40px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: $primary-text-color;
+}
+
+.menu-nav__item {
+    &:not(:last-child) {
+        margin-bottom: 30px;
+
+    }
+}
+
+.current {
+    color: $acent-color;
+}
+}
+
+.menu-social {
+    @extend %list;
+}
+
+.menu-contacts {
+    @extend %list;
+
+    &__item {
+        margin-bottom: 32px
+    }
+
+    &__tel {
+    @extend %link;
+    font-weight: 500;
+font-size: 34px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+
+color: $acent-color
+}
+
+&__mail{
+     @extend %link;
+     font-weight: 500;
+font-size: 24px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: $paragraf-text-color;
+}
+}
+
+
+.menu-social {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 32px;
+
+    &__link {
+        @extend %link;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.2;
+        color: $acent-color;
+    }
+          
+}
+
+
+    .menu-social__item {
+        &:not(:last-child){
+                &::after {
+                    content: '';
+                    margin-right: 10px;
+                    margin-left: 10px;
+                    height: 22px;
+                    border-left: 1px solid  #21212133;
+
+                } 
+        }
+    }
+
+
+
+
+
+
+
