@@ -1,7 +1,7 @@
 .js-open-menu {
 display: none;
 
-@media screen and (max-width: 767px) {
+@include mq(mob-only) {
 display: inline-flex;
 margin-left: auto;
 padding: 0;
@@ -9,12 +9,35 @@ border: none;
 background-color: transparent;
 }
  
+&__icon {
+    fill: currentColor;
+
+        &:hover,
+        &:focus {
+        fill: $acent-color;
+        }      
+
 }
+}
+
+
+
 
 .js-close-menu {
 display: none;
 
-@media screen and (max-width: 767px) {
+&__icon {
+    fill: currentColor;
+
+        &:hover,
+        &:focus {
+        fill: $acent-color;
+        border: none;
+        }      
+
+}
+
+@include mq(mob-only) {
 position: absolute;
 
 top: 10px;
@@ -27,10 +50,13 @@ margin-left: auto;
 padding: 0;
 border: none;
 background-color: transparent;
-// z-index: 2;
+// z-index: 2;7
+
+
+
  }
 
-
+ 
 
 }
 
@@ -62,7 +88,7 @@ background-color: transparent;
 
 .menu-container.is-open {
 display: flex;
-
+min-height: 796px;
 }
 
 .menu-container { 
@@ -92,7 +118,7 @@ padding: 40px 10px 48px 10px;
 // margin-left: auto;
 // margin-right: auto;
 
-@media screen and (min-width:768px){
+@include mq(tablet){
 display: none;
     
 } 

@@ -47,8 +47,8 @@
           </li>
         </ul>
         <button class="js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-            <use class="icon-menu_40px" href="./images/symbol-defs.svg#icon-menu_40px"></use>
+          <svg class="js-open-menu__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
             <!-- <use class="icon-close" href="./images/symbol-defs.svg#icon-close_40px"></use> -->
           </svg>
         </button>
@@ -59,7 +59,7 @@
 
     <div class="menu-container js-menu-container" id="menu-container">
       <button class="js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+        <svg class="js-close-menu__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
           <use class="icon-close" href="./images/symbol-defs.svg#icon-close_40px"></use>
         </svg>
       </button>
@@ -190,6 +190,7 @@
                 "
                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 src="./images/team1-450w.jpg"
+                width="450"
                 alt="Ігор Дем'яненко"
                 loading="lazy"
               />
@@ -624,6 +625,12 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

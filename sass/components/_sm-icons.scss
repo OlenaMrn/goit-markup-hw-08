@@ -3,6 +3,7 @@
 @extend %list;
 @include spaceBetween ($type: center);
 
+
 margin-top: 16px;
 margin-bottom: 0;
 padding-left: 22px;
@@ -18,9 +19,11 @@ padding-right: 22px;
 }
 
 .social-media__link {
-  @include spaceBetween ($type: center);
+  @include spaceBetween ($type:center);
   width: 44px;
   height: 44px;
+  margin-left: 5px;
+  margin-right: 5px;
   background-color: $primary-bg-color;
   border-radius: 50%;
   
