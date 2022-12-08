@@ -30,14 +30,17 @@
         margin-bottom: 15px;
 
     }
-&:hover, &:focus {
+
+  &:hover, &:focus {
     cursor: pointer;
     border: 1px solid $acent-color;
+    outline: none;
 
   }
 
   &:hover svg, &:focus svg {
     fill: $acent-color;
+    
   }
 
 @include mq (mob) {
