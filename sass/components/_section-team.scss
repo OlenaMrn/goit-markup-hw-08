@@ -6,17 +6,16 @@
 .teammate {
     display: block;
     
-    @media screen and (min-width: 768px) {
+ @include mq (tab) {
     display: flex;
   flex-wrap: wrap;
   gap: 30px;
   width: 100%;
-    // flex-wrap: wrap;
-    // margin: 30px;
+   
         
   }
    
-//   @include spaceBetween;
+
 }
 
 .teammate__item {
@@ -30,26 +29,26 @@
   border-radius: 0px 0px 4px 4px;
     
   &:not( :last-child) {
-         @media screen and (max-width: 767px){
+         @include mq (mob-only){
             margin-bottom: 30px;
          }
         
     }
 
- @media screen and (min-width: 480px) {
+@include mq (mob) {
      width: 450px;
      
     }
 
 
-    @media screen and (min-width: 768px) {
+    @include mq (tab) {
      width: calc((100% - 2*30px)/2);
   
     //  margin: 15px;
         //  margin-bottom: 30px;
     }
 
-    @media screen and (min-width: 1200px) {
+   @include mq (desk) {
     width: calc((100% - 4*30px)/4);
     //  margin: 15px;
     //  margin-bottom: 30px;
@@ -66,12 +65,12 @@
   flex-direction: column;
   
 
-  @media screen and (min-width: 768px) {
+@include mq (tab) {
     padding: 30px 24px;
 
   }
 
-   @media screen and (min-width: 1200px) {
+   @include mq (desk) {
     padding: 30px 32px;
 
   }
