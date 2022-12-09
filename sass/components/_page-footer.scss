@@ -15,7 +15,8 @@
 
 .footer-wrap {
     @include mq (tab) {
-    display: flex;}
+    display: flex;
+  align-items: baseline;}
 }
 
 .logo-footer {

@@ -25,6 +25,9 @@
  border: 1px solid #afb1b8;
  background-color: white;
  height: 92px;
+ width: 210px;
+  margin-left: auto;
+ margin-right: auto;
 
     &:not(:last-child) {
         margin-bottom: 15px;
@@ -36,6 +39,7 @@
     border: 1px solid $acent-color;
     outline: none;
 
+
   }
 
   &:hover svg, &:focus svg {
@@ -43,6 +47,11 @@
     
   }
 
+// @media screen and (max-width: 479px){
+//    width: calc((100% - 2*30px)/2);
+  
+// }
+  
 @include mq (mob) {
  
  margin: 15px;
